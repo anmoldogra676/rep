@@ -1,0 +1,55 @@
+
+
+React --> SPA , transpiling
+by default only one component which is App component is being called from index.js
+
+React --> UI library which only holds the component logic  
+so it needs a way to tell that where logic should this apply to. are we working with web or mobile 
+so react dom helps to actually rendering the logic in the dom with the help of virtual dom. react dom 
+is what actually renders the dom 
+
+function component -->
+import component -->
+export default --> same as file name 
+named export --> give the other name export that part
+
+props --> pass the data from parent to child relationship
+uni directional data flow 
+
+
+
+parent child data flow ---> 
+
+hooks add interactivity 
+useState() --> hook or function which changes dynmaically so react 
+keeps track of it. state is the current state so if state changes then react rerenders the whole component
+again.
+
+
+state --> anything which change dynmaically
+
+
+useState --> returns an array of 2 one is value and other is function
+so we use array destructuring
+const [word, setWord] = useState("Hello ")
+
+There is a lifiting the state up --> so need to fix this problem
+
+contextapi --> extract state and store the state
+contextprovider -->
+contextconsumer -->
+
+context api is good
+
+useReducer --> is good for managing the state better based on the action we can choose the useReducer.
+
+
+
+
+For context api --> 
+1. create a context --> it will provide two methods --> provider and consumer
+root level --> we have to wrap child components under this provider --> nameofcontext.provider and pass the value 
+then for using the context --> inside any children component --> use useContext Api to get the value of value of certain state 
+
+2nd thing is useReducer hook  --> which basically helps to update the state based on some action
+let's say 
